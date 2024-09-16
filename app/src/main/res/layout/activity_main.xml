@@ -16,6 +16,7 @@
         android:layout_gravity="start"
         app:menu="@menu/activity_main_drawer"
         tools:ignore="MissingConstraints" />
+    <!-- NavigationView -->
 
     <!-- Top Contact Information -->
     <TextView
