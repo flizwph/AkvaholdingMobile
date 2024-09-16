@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/gradient_background">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Текстовое описание компании -->
+        <TextView
+            android:id="@+id/company_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Управляющая компания ООО \Аква-холдинг\ создана профессионалами в сфере жилой недвижимости в 2000 году.\n\nБолее 20 лет мы гарантируем качественное обслуживание домов. Залог успеха нашей компании - высокоуровневая, профессиональная работа по ключевым направлениям.\n\nОсновные цели и задачи:\n- обеспечение комфортных условий проживания граждан;\n- приведение жилого фонда и коммунальной инфраструктуры в соотвествие со стандартами качества;\n- конструктивное сотрудничество с жителями, тесное взаимодействие с активистами, старшими по домам.\n\nВсе специалисты нашей компании имеют большой опыт в сфере ЖКХ, руководство постоянно совершенствует внутренний контроль работы персонала. Мы ориентируемся на пожелания жителей и стараемся оперативно реагировать на поступающие заявки.\n\nОбщая информация об организации\nАдрес: 109369, г.Москва, Новочеркасский б-р, д.43\nИНН: 7721212646\nОГРН: 1027700515700"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <!-- Кнопка "Назад" -->
+
+    </LinearLayout>
+</ScrollView>

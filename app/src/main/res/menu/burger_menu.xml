@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/about_us"
+        android:title="О нас"/>
+    <item
+        android:id="@+id/how_to_pay"
+        android:title="Как оплатить"/>
+    <item
+        android:id="@+id/company_info"
+        android:title="О компании"/>
+    <item
+        android:id="@+id/news"
+        android:title="Новости"/>
+    <item
+        android:id="@+id/information"
+        android:title="Информация"/>
+</menu>

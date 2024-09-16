@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Name">Сообщить о проблеме</string>
+    <string name="Name2">Введите Ваше имя</string>
+    <string name="StartButtonText">Нажимите, чтобы создать заявку</string>
+    <string name="StartButtonTextHint">Нажмите, чтобы создать заявку</string>
+
+</resources>

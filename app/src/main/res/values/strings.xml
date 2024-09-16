@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">УК "Аква-холдинг"</string>
+    <string name="Name">Сообщить о проблеме</string>
+    <string name="Name2">Введите Ваше имя</string>
+    <string name="navigation_drawer_open">Open navigation menu</string>
+    <string name="navigation_drawer_close">Close navigation menu</string>
+    <string name="logo_description">аква-холдинг</string>
+    <string name="StartButtonText">Нажимите, чтобы создать заявку</string>
+    <string name="StartButtonTextHint">Нажмите, чтобы создать заявку</string>
+    <string name="LastNameHint">Введите Вашу фамилию</string>
+    <string name="mcsv3_image_description" />
+    <string name="mcsv4_image_description" />
+    <string name="mcsv2_image_description" />
+    <string name="mcs_image_description" />
+    <string name="description_of_kapital_image">Изображение капитального ремонта</string>
+    <string name="description_of_promej_image" />
+    <string name="description_of_tarif_image" />
+    <string name="add_photo">addphototest\n</string>
+    <string name="problem_discr">Описание проблемы</string>
+    <string name="userIconDescription" />
+    <string name="NameHint">Введите ваше имя</string>
+    <string name="PatronymicHint">Введите ваше отчество</string>
+    <string name="PhoneHint">Введите номер телефона</string>
+    <string name="AddressHint">Введите адрес</string>
+</resources>

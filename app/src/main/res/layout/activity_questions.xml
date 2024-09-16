@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/gradient_background">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Текст вопросов и ответов -->
+        <TextView
+            android:id="@+id/questions_answers_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1) Может ли совет дома обязать управляющую компанию принять в штат председателя совета дома?"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/questions_answers_otvet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нет. Полномочия совета дома перечислены в ч.5 ст.161_1 ЖК РФ, при этом в указанном списке полномочий отсутствует право по обязанию управляющей компании принимать  в свой штат каких-либо работников.  Совет дома может лишь предложить собственникам на общем собрании определить вознаграждение  председателю за счет дополнительных средств собственников."
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/questions_answers_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2) Можно ли выбрать председателем совета дома житель, который прописан, но не является собственником квартиры?"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/questions_answers_otvet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нет. Согласно ч. 1 ст. 161_1 Жилищного кодекса РФ (далее – ЖК РФ), собственники помещений в доме на  общем собрании обязаны избрать совет многоквартирного дома из числа собственников помещений в данном доме. В соответствии ч. 6 ст. 161_1 ЖК РФ, из числа членов совета многоквартирного дома на общем собрании собственников помещений в многоквартирном доме избирается председатель совета многоквартирного дома. Следовательно, председателем совета дома может быть  выбран только собственник помещения в данном доме (даже если в данном доме он не зарегистрирован)."
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/questions_answers_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3) На площадке около лифта мы с соседями соорудили большой шкаф-кладовку, в котором храним коляски и велосипеды. Управляющая компания требует его демонтировать. Права ли управляющая компания?"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/questions_answers_otvet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Управляющая организация права, шкаф нужно демонтировать.В соответствии с подп. «б» п. 36 Правил противопожарного режима в РФ, утвержденных Постановлением Правительства РФ от 25.04.2012 г. N 390, при эксплуатации эвакуационных путей, эвакуационных и аварийных выходов запрещается загромождать эвакуационные пути и выходы (в том числе проходы, коридоры, тамбуры, галереи, лифтовые холлы, лестничные площадки, марши лестниц, двери, эвакуационные люки) различными материалами, изделиями, оборудованием, производственными отходами, мусором и другими предметами. Кроме того, согласно ч.3 статьи 36 ЖК РФ уменьшение размера общего имущества в многоквартирном доме возможно только с согласия всех собственников помещений в данном доме путем его реконструкции. В случае проверки МЧС, управляющая организация может получить штраф,   после чего, взыскать сумму штрафа с собственников которые установили шкаф."
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/questions_answers_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4) Могут ли собственники утвердить перечень работ и размер платы за содержание и ремонт сразу на 3 года?"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/questions_answers_otvet4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Да, можете. В соответствии с ч.7 ст.156 ЖК РФ, Размер платы за содержание жилого помещения в многоквартирном доме, в котором не созданы товарищество собственников жилья либо жилищный кооператив или иной специализированный потребительский кооператив, определяется на общем собрании собственников помещений в таком доме, которое проводится в порядке, установленном статьями 45 - 48 настоящего Кодекса, за исключением размера расходов, который определяется в соответствии с частью 9.2 настоящей статьи. Размер платы за содержание жилого помещения в многоквартирном доме определяется с учетом предложений управляющей организации и устанавливается на срок не менее чем один год."
+            android:textSize="16sp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

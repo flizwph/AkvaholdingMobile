@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar with title and wavy graphic -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!-- Tabs below the toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- Title text -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="НОВОСТИ"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <!-- Wavy line graphic -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/viv3" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Content Section for News -->
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TextView
+            android:id="@+id/tab_zhkh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="НОВОСТИ ЖКХ"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="НОВОСТИ КОМПАНИИ"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tabs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/gradient_background">
+
+            <!-- Example news items -->
+            <!-- Новая новость -->
+            <TextView
+                android:id="@+id/news_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ознакомьтесь с правилами Пожарной безопасности !!!"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/news_date_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26.02.2024"
+                android:textSize="16sp" />
+
+            <!-- Other news items... (same pattern) -->
+            <!-- Example of additional news items -->
+            <TextView
+                android:id="@+id/news_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Капитальный ремонт!!"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/news_date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09.02.2024"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/news_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПРЕДУПРЕЖДЕНИЕ! СНЕГОПАД!"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/news_date_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19.01.2024"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/news_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Новые ставки и тарифы на жилищно-коммунальные услуги для населения с 01.01.2024г."
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/news_date_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21.12.2023"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/news_title_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="УВЕДОМЛЕНИЕ о внесении изменений в постановление Правительства Москвы № 354 от 06.05.2011г."
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/news_date_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14.11.2023"
+                android:textSize="16sp"/>
+
+            <!-- Repeat for other news items -->
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
