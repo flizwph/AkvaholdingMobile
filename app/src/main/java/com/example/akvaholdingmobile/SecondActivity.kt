@@ -216,7 +216,7 @@ class SecondActivity : AppCompatActivity() {
 
         val emailIntent = Intent(Intent.ACTION_SEND).apply {
             type = "message/rfc822"
-            putExtra(Intent.EXTRA_EMAIL, arrayOf("pidorokpidorasovich@gmail.com"))
+            putExtra(Intent.EXTRA_EMAIL, arrayOf("aqua-holding@rambler.ru"))
             putExtra(Intent.EXTRA_SUBJECT, "Данные из приложения")
             putExtra(Intent.EXTRA_TEXT, data.toString())
         }
