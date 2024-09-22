@@ -2,81 +2,158 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@drawable/gradient_background">
+        android:padding="16dp">
 
-        <ImageView
+        <!-- Текст вопросов -->
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Может ли управляющая организация отключить коммунальные услуги (далее - КУ) если имеется долг по оплате? Должна ли УК как-то уведомить о предстоящем отключении?"
+            android:textSize="16sp"/>
+
+        <!-- Кнопка для переключения ответа -->
+        <Button
+            android:id="@+id/show_hide_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть ответ"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <!-- Ответ будет здесь -->
+        <TextView
+            android:id="@+id/response_text"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ограничение или приостановление КУ осуществляется управляющей организацией в случае, если задолженность потребителя по оплате одной КУ превышает сумму двух месячных размеров платы за КУ. Расчет размера платы осуществляется исходя из норматива потребления такой услуги и действующего тарифа на соответствующий вид коммунального ресурса. При этом, наличие или отсутствие ИПУ не имеет значения. Перед началом процедуры ограничения/приостановления КУ управляющая организация обязана направить должнику уведомление о том, что если он в течение 20 дней со дня доставки ему указанного уведомления не погасит задолженность по оплате КУ, то эта услуга сначала будет ограничена, а в случае непогашения задолженности по истечении 10 дней с момента ограничения КУ, полностью приостановлена. Если ограничение КУ технически невозможно, то управляющая организация вправе без предварительного введения ограничения сразу приостановить КУ.
+
+Обоснование. Положения об ограничении/приостановлении КУ содержатся в пунктах 117-122 Правил предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов, утвержденных Постановлением Правительства РФ от 06.05.2011 № 354. Необходимо отметить, что условия договора управления могут предусматривать иной порядок ограничения/приостановления КУ.
+"
+            android:textSize="16sp"/>
+
+        <!-- Остальные вопросы и ответы... -->
+
+        <!-- Вопрос 2 -->
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Если межповерочный интервал ИПУ истек в декабре 2017 года, а поверка произведена спустя 3 месяца, должна ли управляющая организация произвести перерасчет за период, когда у ИПУ не было поверки?"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/show_hide_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть ответ"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/response2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нет, не должна.
+Обоснование. Правила предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов, утвержденные Постановлением Правительства РФ от 06.05.2011 № 354 не предусматривают произведение перерасчета в данной ситуации. С момента истечения межповерочного интервала ИПУ и до даты возобновления учета коммунального ресурса (проведения поверки) расчет платы за КУ определяется исходя из среднемесячного объема потребления КУ или по нормативу, в зависимости от количества расчетных периодов, на протяжении которых ИПУ не был поверен (п.п. 59, 60 Правил 354).
+"
+            android:textSize="16sp"/>
+
+        <!-- Вопрос 3 -->
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. На площадке около лифта мы с соседями соорудили большой шкаф-кладовку, в котором храним коляски и велосипеды. Управляющая компания требует его демонтировать. Права ли управляющая компания?"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/show_hide_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть ответ"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/response3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Управляющая организация права, шкаф нужно демонтировать.
+
+В соответствии с подп. «б» п. 36 Правил противопожарного режима в РФ, утвержденных Постановлением Правительства РФ от 25.04.2012 г. N 390, при эксплуатации эвакуационных путей, эвакуационных и аварийных выходов запрещается загромождать эвакуационные пути и выходы (в том числе проходы, коридоры, тамбуры, галереи, лифтовые холлы, лестничные площадки, марши лестниц, двери, эвакуационные люки) различными материалами, изделиями, оборудованием, производственными отходами, мусором и другими предметами.
+Кроме того, согласно ч.3 статьи 36 ЖК РФ уменьшение размера общего имущества в многоквартирном доме возможно только с согласия всех собственников помещений в данном доме путем его реконструкции.
+В случае проверки МЧС, управляющая организация может получить штраф,   после чего, взыскать сумму штрафа с собственников которые установили шкаф.
+"
+            android:textSize="16sp"/>
+
+        <!-- Вопрос 4 -->
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Кто должен обеспечивать надлежащую эксплуатацию приборов учета используемых энергетических ресурсов?"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/show_hide_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть ответ"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/response4"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обеспечить надлежащую эксплуатацию приборов учета используемых энергетических ресурсов, их сохранность, своевременную замену обязаны собственники таких приборов учета (ч. 7 ст. 13 Федерального закона от 23.11.2009 г. № 261-ФЗ «Об энергосбережении и о повышении энергетической эффективности и о внесении изменений в отдельные законодательные акты Российской Федерации»)."
+            android:textSize="16sp"/>
+        <!-- Вопрос 5 -->
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Мы ошибочно передали показания за воду,  произошла переплата  как и в какой срок управляющая организация должна ее вернуть?"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/show_hide_button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть ответ"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/response5"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В соответствии с п.61 Правил предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов, утвержденных Постановлением Правительства РФ от 06.05.2011 N 354, если в ходе проводимой исполнителем проверки достоверности предоставленных потребителем сведений о показаниях индивидуальных, общих (квартирных), комнатных приборов учета и (или) проверки их состояния исполнителем будет установлено, что прибор учета находится в исправном состоянии, в том числе пломбы на нем не повреждены, но имеются расхождения между показаниям проверяемого прибора учета (распределителей) и объемом коммунального ресурса, который был предъявлен потребителем исполнителю и использован исполнителем при расчете размера платы за коммунальную услугу за предшествующий проверке расчетный период, то исполнитель обязан произвести перерасчет размера платы за коммунальную услугу и направить потребителю в сроки, установленные для оплаты коммунальных услуг за расчетный период, в котором исполнителем была проведена проверка, требование о внесении доначисленной платы за предоставленные потребителю коммунальные услуги либо уведомление о размере платы за коммунальные услуги, излишне начисленной потребителю. Излишне уплаченные потребителем суммы подлежат зачету при оплате будущих расчетных периодов.
+
+        Перерасчет размера платы должен быть произведен исходя из снятых исполнителем в ходе проверки показаний проверяемого прибора учета. "
+            android:textSize="16sp"/>
+
+
+
+        <!-- Кнопка "Назад" -->
+        <Button
             android:id="@+id/back_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
             android:layout_marginTop="16dp"
-            android:src="@drawable/arrow"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <!-- Текст вопросов и ответов -->
-        <TextView
-            android:id="@+id/questions_answers_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1) Может ли совет дома обязать управляющую компанию принять в штат председателя совета дома?"
-            android:textSize="16sp"/>
-        <TextView
-            android:id="@+id/questions_answers_otvet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Нет. Полномочия совета дома перечислены в ч.5 ст.161_1 ЖК РФ, при этом в указанном списке полномочий отсутствует право по обязанию управляющей компании принимать  в свой штат каких-либо работников.  Совет дома может лишь предложить собственникам на общем собрании определить вознаграждение  председателю за счет дополнительных средств собственников."
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/questions_answers_text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2) Можно ли выбрать председателем совета дома житель, который прописан, но не является собственником квартиры?"
-            android:textSize="16sp"/>
-        <TextView
-            android:id="@+id/questions_answers_otvet2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Нет. Согласно ч. 1 ст. 161_1 Жилищного кодекса РФ (далее – ЖК РФ), собственники помещений в доме на  общем собрании обязаны избрать совет многоквартирного дома из числа собственников помещений в данном доме. В соответствии ч. 6 ст. 161_1 ЖК РФ, из числа членов совета многоквартирного дома на общем собрании собственников помещений в многоквартирном доме избирается председатель совета многоквартирного дома. Следовательно, председателем совета дома может быть  выбран только собственник помещения в данном доме (даже если в данном доме он не зарегистрирован)."
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/questions_answers_text3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3) На площадке около лифта мы с соседями соорудили большой шкаф-кладовку, в котором храним коляски и велосипеды. Управляющая компания требует его демонтировать. Права ли управляющая компания?"
-            android:textSize="16sp"/>
-        <TextView
-            android:id="@+id/questions_answers_otvet3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Управляющая организация права, шкаф нужно демонтировать.В соответствии с подп. «б» п. 36 Правил противопожарного режима в РФ, утвержденных Постановлением Правительства РФ от 25.04.2012 г. N 390, при эксплуатации эвакуационных путей, эвакуационных и аварийных выходов запрещается загромождать эвакуационные пути и выходы (в том числе проходы, коридоры, тамбуры, галереи, лифтовые холлы, лестничные площадки, марши лестниц, двери, эвакуационные люки) различными материалами, изделиями, оборудованием, производственными отходами, мусором и другими предметами. Кроме того, согласно ч.3 статьи 36 ЖК РФ уменьшение размера общего имущества в многоквартирном доме возможно только с согласия всех собственников помещений в данном доме путем его реконструкции. В случае проверки МЧС, управляющая организация может получить штраф,   после чего, взыскать сумму штрафа с собственников которые установили шкаф."
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/questions_answers_text4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4) Могут ли собственники утвердить перечень работ и размер платы за содержание и ремонт сразу на 3 года?"
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/questions_answers_otvet4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Да, можете. В соответствии с ч.7 ст.156 ЖК РФ, Размер платы за содержание жилого помещения в многоквартирном доме, в котором не созданы товарищество собственников жилья либо жилищный кооператив или иной специализированный потребительский кооператив, определяется на общем собрании собственников помещений в таком доме, которое проводится в порядке, установленном статьями 45 - 48 настоящего Кодекса, за исключением размера расходов, который определяется в соответствии с частью 9.2 настоящей статьи. Размер платы за содержание жилого помещения в многоквартирном доме определяется с учетом предложений управляющей организации и устанавливается на срок не менее чем один год."
-            android:textSize="16sp"/>
-
-
-
+            android:backgroundTint="@android:color/holo_blue_light"/>
     </LinearLayout>
 </ScrollView>
