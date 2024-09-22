@@ -3,6 +3,7 @@ package com.example.akvaholdingmobile
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -39,7 +40,7 @@ class QuestionsActivity : AppCompatActivity() {
         )
 
         // Устанавливаем слушатель нажатия на кнопку "Назад"
-        val backButton: Button = findViewById(R.id.back_button)
+        val backButton: ImageView = findViewById(R.id.back_button)
         backButton.setOnClickListener {
             onBackPressed()
             // Скрыть все ответы при возврате
